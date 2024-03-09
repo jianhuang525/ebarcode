@@ -1,0 +1,32 @@
+####################################cutbarcode软件说明##################################
+######### 本软件用于扩增子双端序列去除Barcode以及引物等序列
+参数说明：  
+    --R1 输入的左端文件 \
+    --R2 输入的右端文件 \
+    --P1 前引物 F引物 \
+    --P2 后引物 R引物 \
+    --O1 输出的左端文件 \
+    --O2 输出的右端文件  \
+    --cutprimer  是否切除引物(无论是否选择 Barcode已经去除)   \
+    --cuttail  每个序列末端碱基质量较低 去除末端后几位碱基
+
+
+
+
+操作示例：  
+
+
+
+./ebarcode  \
+    --R1 NLa2x.R1.raw.fastq \
+    --R2 NLa2x.R2.raw.fastq \
+    --P1 TCCGATTACGAYCGYGAGAAGCT \
+    --P2 CSGCYTCGGTSGTCAGGAACAG \
+    --O1 N1.R1.fastq \
+    --O2 N1.R2.fastq  \
+    --cutprimer  \
+    --cuttail 10  
+
+
+
+
